@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: teal;
+            color: khaki;
+            font-size: 30px;
+            text-align: center;
+            border: 2px solid blue;
+        }
+        .container{
+            width: 90%;
+            border: 2px solid green;
+            margin: 0 auto;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+        /* Media Query  */
+
+
+        @media (max-width: 576px) {
+       .row{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+       }
+        
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="box">Card-1</div>
+            <div class="box">Card-2</div>
+            <div class="box">Card-3</div>
+        </div>
+    </div>
+</body>
+</html>
