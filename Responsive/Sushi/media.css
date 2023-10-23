@@ -1,0 +1,28 @@
+@media (max-width: 576px) { 
+    .row{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .main-text{
+        padding: 70px 0px;
+    }
+    h2+p{
+        padding: 10px 0px;
+        margin: 0px;
+    }
+    h4+p{
+        padding: 10px 100px 30px;
+        margin: 0px 30px;
+    }
+    .col-33{
+        width: 100%;
+    }
+    .zig-1{
+        top: 240px;
+        left: 80px;
+    }
+    .dot-1{
+        top: -50px;
+        left: 100px;
+    }
+ }
