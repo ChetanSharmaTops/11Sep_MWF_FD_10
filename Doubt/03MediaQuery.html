@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #section-1 {
+        background-color: rgb(243, 0, 154);
+        color: aliceblue;
+        font-size: 30px;
+      }
+      #section-2 {
+        background-color: blueviolet;
+        color: aliceblue;
+        font-size: 30px;
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .col-50 {
+        width: 50%;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+      }
+      .circle {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin: 50px auto;
+        background: url(../Images/banner2.jpg) no-repeat center center/cover;
+      }
+      .main-text{
+        text-align: center;
+        padding-top: 50px;
+      }
+      p{
+        padding: 20px 0 10px;
+      }
+      h2+p{
+        padding: 20px 100px 10px;
+        margin: 0 100px;
+      }
+      h4{
+        text-align: center;
+        padding: 30px 0px;
+      }
+      
+    </style>
+  </head>
+  <body>
+
+    <!-- First section  -->
+
+    <section id="section-1">
+        <div class="container">
+            <div class="main-text">
+                <h2>Sub-Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odit quos consequatur atque debitis assumenda.</p>
+            </div>
+            <div class="row">
+                <div class="col-50">
+                   <div class="main-text">
+                        <h3>Sub-sub-Heading</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                        odio?
+                        </p>
+                   </div>
+                </div>
+                <div class="col-50">
+                    <div class="circle">
+                        <h4>Hello Deepak</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- second section  -->
+
+
+    <section id="section-2">
+        <div class="container">
+            <div class="main-text">
+                <h2>Sub-Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odit quos consequatur atque debitis assumenda.</p>
+            </div>
+            <div class="row">
+               
+                <div class="col-50">
+                    <div class="circle"></div>
+                </div>
+                <div class="col-50">
+                    <div class="main-text">
+                         <h3>Sub-sub-Heading</h3>
+                         <p>
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                         odio?
+                         </p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>
