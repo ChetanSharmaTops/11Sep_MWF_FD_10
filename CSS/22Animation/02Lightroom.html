@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightroom In CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      
+        .box{
+            height: 100vh;
+            border: 5px solid orangered;
+            background-color: teal;
+            animation-name: magic;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+
+       
+        @keyframes magic {
+            0%{
+                background-color: rgb(128, 0, 73);
+            }
+            25%{
+                background-color: rgb(38, 0, 128);
+                
+            }
+            50%{
+                background-color: rgb(75, 128, 0);
+                
+            }
+            75%{
+                background-color: teal;
+            
+            }
+            100%{
+                background-color: rgb(128, 0, 0);
+
+                
+            }
+
+        }
+    </style>
+</head>
+<body>
+        <div class="box"></div>
+</body>
+</html>
