@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            background-color: tan;
+        }
+        .container{
+            background-color: thistle;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .col-50{
+            width: 50%;
+        }
+        .text{
+            text-align: center;
+        }
+        h2{
+            font-size: 50px;
+
+        }
+        p{
+            font-size: 30px;
+        }
+        img{
+            width: 100%;
+        }
+        .offer{
+            width: 200px;
+            position: absolute;
+            top: 0px;
+            /* left: 500px; */
+            right: 200px;
+        }
+        .image-wrapper{
+            position: relative;
+        }
+
+
+        /* Media Query  */
+
+        @media (max-width: 576px){
+          .row{
+            flex-direction: column;
+            gap: 30px;
+          }
+          .col-50{
+            width: 100%;
+          }
+          .offer{
+            top: 0%;
+            width: 30%;
+            /* left: 150px; */
+            left: 35%;
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="section-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-50">
+              <div class="text">
+                <h2>Hello</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  neque!
+                </p>
+              </div>
+            </div>
+            <div class="col-50"><div class="image-wrapper">
+                <img src="../Images/sunburn2.webp" alt="">
+                <img src="../Images/offer.jpg" class="offer" alt="">
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
