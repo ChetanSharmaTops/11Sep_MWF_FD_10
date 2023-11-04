@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h2{
+            font-size: 50px;
+            background-color: cadetblue;
+            color: blueviolet;
+        }
+        .box{
+            height: 300px;
+            border: 5px ridge blue;
+            background-color: thistle;
+            color: brown;
+            font-size: 50px;
+            text-align: center;
+            display: none;
+        }
+        h2:hover + .box{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hover Me</h2>
+    <div class="box">Hello Box</div>
+</body>
+</html>
