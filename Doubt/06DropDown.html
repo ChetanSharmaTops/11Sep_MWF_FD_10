@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DropDown Menu</title>
+    <style>
+        *{
+            font-size: 30px;
+            list-style-type: none;
+        }
+        .hey, .hi, .bye{
+            display: none;
+            width: 200px;
+            height: 100px;
+            background-color: teal;
+            color: khaki;
+            position: absolute;
+        }
+      .hey-hey:hover + .hey{
+        display: block;
+            top: 0px;   
+            left: 140px;
+        }
+       .hi-hi:hover + .hi{
+        display: block;
+
+            top: 134px;   
+            left: 140px;
+        }
+        .bye-bye:hover + .bye{
+        display: block;
+
+            top: 268px;   
+            left: 140px;
+        }
+        .hey-hey, .hi-hi, .bye-bye{
+            background-color: crimson;
+            color: aliceblue;
+            width: 100px;
+            margin-bottom: 100px;
+        }
+        .kuchbhi{
+            position: relative;
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ol class="kuchbhi">
+        <!-- Parent  -->
+
+        <!-- first -->
+        <li class="hey-hey">Home</li>
+
+        <!-- iska DropDown -->
+        <ul  class="hey" >
+          <li>Hey</li>
+          <li>Hey</li>
+          <li>Hey</li>
+        </ul>
+
+
+        <!-- second -->
+        <li class="hi-hi">About</li>
+
+        <!-- iska DropDown -->
+
+        <ul class="hi">
+          <li>hi</li>
+          <li>hi</li>
+          <li>hi</li>
+        </ul>
+
+
+        <!-- third -->
+        <li class="bye-bye">Team</li>
+
+        <!-- iska DropDown -->
+
+        <ul class="bye">
+          <li>bye</li>
+          <li>bye</li>
+          <li>bye</li>
+        </ul>
+      </ol>
+    </nav>
+  </body>
+</html>
