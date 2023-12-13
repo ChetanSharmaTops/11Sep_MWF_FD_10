@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation With single Function</title>
+  </head>
+  <body>
+    <h1>Form Validation With single Function</h1>
+    <hr />
+
+    <input type="text" name="uname" id="uname" onblur="handleValidation(this, 'error1', ' User Name')" />
+    <span id="error1"></span>
+    <br /><br />
+    <input type="password" name="upass" id="upass"  onblur="handleValidation(this, 'error2', ' User Password')"/>
+    <span id="error2"></span>
+    <br /><br />
+    <input type="email" name="uemail" id="uemail" onblur="handleValidation(this, 'error3', ' User Email')" />
+    <span id="error3"></span>
+    <br /><br />
+    <input type="mobile" name="umobile" id="umobile" onblur="handleValidation(this, 'error4', ' User Mobile')" />
+    <span id="error4"></span>
+    <br /><br />
+
+    <script>
+      function handleValidation(jitender, devarsh, Queen) {
+        // let userName = document.getElementById("uname").value;
+        // console.log(userName);
+
+        if (jitender.value == '') {
+            document.getElementById(devarsh).innerText = "Enter Valid" + Queen
+        }
+        else{
+            document.getElementById(devarsh).innerText = ""
+
+        }
+      }
+    //   handleValidation()
+    </script>
+  </body>
+</html>
