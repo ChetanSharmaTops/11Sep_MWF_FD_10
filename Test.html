@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      name=""
+      id="first"
+      value="anything"
+      onblur="greet(this)"
+    />
+    <p onclick="hide(this, 'p1')" id="p1">Lorem ipsum dolor sit amet.</p>
+    <p onclick="hide(this, 'p2')" id="p2">Lorem ipsum dolor sit amet.</p>
+    <p onclick="hide(this, 'p3')" id="p3">Lorem ipsum dolor sit amet.</p>
+    <p onclick="hide(this, 'p4')" id="p4">Lorem ipsum dolor sit amet.</p>
+    <!-- <p onclick="hide(this)" id="p1">Lorem ipsum dolor sit amet.</p>
+    <p onclick="hide(this)" id="p2">Lorem ipsum dolor sit amet.</p>
+    <p onclick="hide(this)" id="p3">Lorem ipsum dolor sit amet.</p>
+    <p onclick="hide(this)" id="p4">Lorem ipsum dolor sit amet.</p> -->
+
+    <script>
+    //   function hide(jitu) {
+      function hide(jitu, para) {
+        // jitu.style.color = 'green'
+        let a = document.getElementById(para);
+        a.style.color = "red";
+      }
+
+      // let a = document.getElementById('first')
+      // console.log(a);
+      // console.log(typeof a);
+      // console.log(a.value);
+      // console.log(typeof a.value);
+
+      function greet(para1) {
+        // console.log('hello function greet');
+        console.log(para1);
+        // console.log(para2);
+      }
+
+      // greet()
+      // What is block in JS?
+
+      {
+        // block in js
+      }
+
+      // // let a = 10;
+      // // var a = 10;
+      // const a = 10;
+
+      // {
+      //     // let a = 50;
+      //     // var a = 50;
+      //     const a = 50;
+      //     console.log(a);
+      // }
+
+      // console.log(a);
+
+
+
+
+      function addTwoNumber(num1, num2) {
+        return num1 + num2
+      }
+
+      console.log(addTwoNumber(4,5));
+      console.log(addTwoNumber(6,8));
+      console.log(addTwoNumber(4,2));
+    </script>
+  </body>
+</html>
