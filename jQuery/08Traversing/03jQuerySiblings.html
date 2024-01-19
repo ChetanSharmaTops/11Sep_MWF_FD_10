@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Siblings Traversing</title>
+    <style>
+        *{
+            margin: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    body
+    <div class="great-grand-parent">
+      great-grand-parent
+      <div class="grand-parent">
+        grand-parent
+        <div class="parent">
+          parent
+          <div class="child">child-1</div>
+          <div class="box">child-1</div>
+          <div class="child">child-2</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery  -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <script>
+      console.log($);
+
+
+      $(document).ready(function () {
+
+        
+       
+
+
+        // Siblings
+
+      
+        $('.child').siblings().css({border: '3px solid green'})
+   
+
+
+
+
+
+
+      });
+    </script>
+  </body>
+</html>
