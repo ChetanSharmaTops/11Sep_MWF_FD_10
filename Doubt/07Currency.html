@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency</title>
+</head>
+<body>
+    <input type="text" id="first">
+    <select  id="selectKaro" onchange="btao(this)">
+        <option value="hidden" >---select---</option>
+        <option value="1" class="same">one</option>
+        <option value="2" class="same">Two</option>
+        <option value="3" class="same">Three</option>
+
+    </select>
+    <input id="show"></input>
+
+
+    <script>
+        let a = document.getElementById('first');
+
+        // let b = document.querySelectorAll('.same')
+
+        function btao(b) {
+            console.log(a.value);
+            b.forEach(element => {
+                // console.log(element);
+                // console.log(element.value);
+                console.log(element.value * parseFloat(a.value));
+                let total = parseFloat(a.value) * element.value
+                document.getElementById('show').value = total
+                // console.log(element.value);
+            });
+            // console.log(a);
+            // console.log(b);
+            // console.log(total);
+        }
+    </script>
+</body>
+</html>
