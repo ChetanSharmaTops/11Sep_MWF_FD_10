@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adv. Loops </title>
+</head>
+<body>
+    <script>
+           let a = [1,2,3,4,5]
+    console.log(a);
+
+
+    // a.forEach(element => {
+    //   console.log(element);
+      
+    // });
+
+    // for (let index = 0; index < a.length; index++) {
+    //   const element = a[index];
+    //   console.log(element);
+      
+    // }
+
+
+    let details = {
+      name: 'chetan',
+      employee: 'Tops',
+      contact: 156145,
+      isLoggedIn : true,
+      email: 'chetan@gmail.com'
+    }
+
+    for (const key in details) {
+      if (Object.hasOwnProperty.call(details, key)) {
+        const element = details[key];
+        console.log(`${key}: ${details[key]}`);
+      }
+    }
+
+    for (const iterator of a) {
+      console.log(iterator);
+    }
+    </script>
+</body>
+</html>
