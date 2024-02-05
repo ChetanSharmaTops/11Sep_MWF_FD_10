@@ -27,15 +27,14 @@
       // Safari => SquirrelFish
       // Firefox => SpiderMonkey
 
+      //   Features of JavaScript
 
-    //   Features of JavaScript 
-
-    // Web Development  // React JS 
-    // Mobile Development (Android & IOS) // React Native
-    // Game Development 
-    // ML & AI  
-    // BlockChain 
-    // Desktop App 
+      // Web Development  // React JS
+      // Mobile Development (Android & IOS) // React Native
+      // Game Development
+      // ML & AI
+      // BlockChain
+      // Desktop App
 
       // Variables
 
@@ -69,53 +68,43 @@
 
       // {This is the block in JavaScript. Whatever comes inside this act as block scope}
 
-    //   var a = 10;
-    //   console.log(a); // 10
-    //   {
-    //    var a = 20;
-    //   }
-    //   console.log(a); // 20
-    //   a = 30;
-    //   console.log(a); // 30
+      //   var a = 10;
+      //   console.log(a); // 10
+      //   {
+      //    var a = 20;
+      //   }
+      //   console.log(a); // 20
+      //   a = 30;
+      //   console.log(a); // 30
 
+      // Data Types
 
-    // Data Types 
+      // 1. Premitive Data Type
 
+      // Number
+      // Null =>  Typeof is object  // spacial data type
+      // String
 
-    // 1. Premitive Data Type
+      // '', "", `Template Literals ${Varibale}`
 
-    // Number
-    // Null =>  Typeof is object  // spacial data type
-    // String
+      // Symbol  =>
 
-    // '', "", `Template Literals ${Varibale}`
+      // let a = Symbol('hello')
+      // console.log(a);
+      // console.log(typeof a);
 
+      // BigInt
+      // Boolean  => True , False
+      // Undefined  => undefined
 
-    // Symbol  => 
+      // What is the diffrenece between undefined and Not Defined?
 
-    // let a = Symbol('hello')
-    // console.log(a);
-    // console.log(typeof a);
+      // 2. Non Premitive Data Type
 
+      // Array => type of is object
+      // Object => type of is object
 
-    // BigInt
-    // Boolean  => True , False
-    // Undefined  => undefined
-
-
-
-    // What is the diffrenece between undefined and Not Defined?
-
-    // 2. Non Premitive Data Type
-
-
-    // Array => type of is object
-    // Object => type of is object
-
-
-
-    // passed by value (Primitive Data Types)
-
+      // passed by value (Primitive Data Types)
 
       // var a = 10;
       // var b = a
@@ -123,96 +112,124 @@
       // console.log(b);
       // console.log(a);
 
+      // passed by Reference (Non-Primitive Data Types)
 
-    // passed by Reference (Non-Primitive Data Types)
+      //  let marks1 = [10,20,30,40]
+      //  let marks2 = marks1
+
+      //  console.log(marks1);
+      //  console.log(marks2);
+      //  marks2.push(50)
+      //  console.log(marks2);
+      //  console.log(marks1);
+
+      //  Array Methods
+
+      // let a = [1,2,3,4,5]
+      // console.log(a);
+
+      // a.forEach(element => {
+      //   console.log(element);
+
+      // });
+
+      // for (let index = 0; index < a.length; index++) {
+      //   const element = a[index];
+      //   console.log(element);
+
+      // }
+
+      // let details = {
+      //   name: 'chetan',
+      //   employee: 'Tops',
+      //   contact: 156145,
+      //   isLoggedIn : true,
+      //   email: 'chetan@gmail.com'
+      // }
+
+      // for (const key in details) {
+      //   if (Object.hasOwnProperty.call(details, key)) {
+      //     const element = details[key];
+      //     console.log(`${key}: ${details[key]}`);
+      //   }
+      // }
+
+      // for (const iterator of a) {
+      //   console.log(iterator);
+      // }
+
+      // Objects
+
+      // Literals
+      // let details = {
+      //   name: 'chetan',
+      //   employee: 'Tops',
+      //   contact: 156145,
+      //   isLoggedIn : true,
+      //   Sibilings: {
+      //     name: 'xvz',
+      //     age: 20,
+      //     email: "xyz@netflix.com"
+      //   },
+      //   email: 'chetan@gmail.com',
+
+      // }
+
+      // details.email = 'chetan@google.com';
+
+      // console.log(details);
+      // console.log(details.name);
+      // console.log(details?.Sibilings?.name);
+
+      // Optional Chaining
+
+      // Object.freeze(details)
+
+      // details.email = 'chetan@facebook.com';
+
+      // console.log(details);
+
+      // Conditional Statements
+
+      // if
+
+      // let a = 10;
+
+      // if (a == 10) {
+      //   alert("hey Ten");
+      // confirm("kuch bhi");
+      // }
+      // if else
+
+      // if (condition) {
+      // } else {
+      // }
+
+      // if else if
+
+      // if (condition) {
+      // } else if (condition2nd) {
+      // } else if (condition3rd) {
+      // } else {
+      // }
+
+      // Ternary Operator
+
+      // Syntax 
+
+      // let result = condition ? value1 : value2;
 
 
-    //  let marks1 = [10,20,30,40]
-    //  let marks2 = marks1
-
-    //  console.log(marks1);
-    //  console.log(marks2);
-    //  marks2.push(50)
-    //  console.log(marks2);
-    //  console.log(marks1);
-
-
-    //  Array Methods 
-
-    // let a = [1,2,3,4,5]
-    // console.log(a);
-
-
-    // a.forEach(element => {
-    //   console.log(element);
       
-    // });
-
-    // for (let index = 0; index < a.length; index++) {
-    //   const element = a[index];
-    //   console.log(element);
-      
-    // }
-
-
-    // let details = {
-    //   name: 'chetan',
-    //   employee: 'Tops',
-    //   contact: 156145,
-    //   isLoggedIn : true,
-    //   email: 'chetan@gmail.com'
-    // }
-
-    // for (const key in details) {
-    //   if (Object.hasOwnProperty.call(details, key)) {
-    //     const element = details[key];
-    //     console.log(`${key}: ${details[key]}`);
-    //   }
-    // }
-
-    // for (const iterator of a) {
-    //   console.log(iterator);
-    // }
-
-
-
-    // Objects 
-
-
-    // Literals 
-    let details = {
-      name: 'chetan',
-      employee: 'Tops',
-      contact: 156145,
-      isLoggedIn : true,
-      Sibilings: {
-        name: 'xvz',
-        age: 20,
-        email: "xyz@netflix.com"
-      },
-      email: 'chetan@gmail.com',
-
-    }
-
-    details.email = 'chetan@google.com';
-
-    console.log(details);
-    console.log(details.name);
-    console.log(details?.Sibilings?.name);
-
-
-    // Optional Chaining
-
-
-
-
-    // Object.freeze(details)
-
-
-    // details.email = 'chetan@facebook.com';
-
-    // console.log(details);
-   
+      // let a = 10;
+      // if (a == 10) {
+      //   alert("True");
+      // } else {
+      //   alert("False");
+      // }
+      // let accessAllowed;
+      let age = prompt("How old are you?", "");
+      age > 18 ? alert("Yes, You Can Drive") : alert("No, You Can't Drive");
     </script>
   </body>
 </html>
