@@ -12,7 +12,7 @@
     <button class="btnShow">Show Selector</button>
     <button class="btnToggle">Toggle Selector</button>
 
-    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
     <script>
       $(document).ready(function () {
         // Hide
@@ -26,7 +26,7 @@
           console.log("P element is show");
         });
         // Toggle
-        $(".btnToggle").click(function () {
+        $(".btnToggle").on('click',function () {
           $("p").toggle();
           console.log("P element is Toggle");
         });

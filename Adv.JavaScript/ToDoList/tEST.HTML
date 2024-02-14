@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- <input type="text"  id="inp"> -->
+
+    <!-- <button onclick="handleEvent()" id="hey">Click</button> -->
+
+    <button onclick="handleAppend()">Click to Append</button>
+    <div id="box"></div>
+
+
+
+    <script>
+        // function handleEvent(){
+
+        //     let a = document.getElementById('inp')
+        //     let b = document.getElementById('hey')
+        //     if (a.value != '') {
+        //         a.value = ''
+        //         console.log('empty');
+        //         b.disabled = 'true'
+                
+        //     }
+        //     else{
+        //         // a.setAttribute('disabled', 'disabled')
+        //         b.disabled = 'false'
+        //         // b.setAttribute('disabled', 'disabled')
+        //         console.log('full');
+        //     }
+        // }
+
+
+        function handleAppend() {
+            console.log('sucess');
+            let first_element = document.createElement('p') 
+            console.log(first_element);
+            let text = `<li>Hello I'm TextNode In First Element</li>`
+            let content = document.createTextNode(text)
+            console.log(content);
+            first_element.appendChild(content)
+
+
+
+            first_element.innerHTML = text
+            document.getElementById('box').appendChild(first_element)
+
+        }
+
+    </script>
+</body>
+</html>
