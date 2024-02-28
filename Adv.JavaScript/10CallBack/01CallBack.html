@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CallBack In JS</title>
+  </head>
+  <body>
+    <h1>CallBack In JS</h1>
+
+    <p>
+      A JavaScript callback is a function which is to be executed after another
+      function has finished execution
+    </p>
+
+    <script>
+        // Synchronous Programming 
+
+        console.log('10');
+        console.log('20');
+        console.log('30');
+
+
+         // ASynchronous Programming 
+
+
+         console.log('before');
+         setTimeout(() => {
+            console.log(`hey I'm CallBack`);
+         }, 2000);
+         console.log('after');
+
+
+
+    </script>
+  </body>
+</html>

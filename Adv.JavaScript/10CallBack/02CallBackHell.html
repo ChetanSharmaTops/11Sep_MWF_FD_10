@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CallBack Hell</title>
+  </head>
+  <body>
+    <h1>CallBack Hell</h1>
+    <p>The nested callback makes a pyramid of Doom </p>
+
+    <script>
+      apiProduct.addEventListener("click", function () {
+        apiCart.addEventListener("click", function () {
+          apiPlaceOrder.addEventListener("click", function () {
+            apiPayment.addEventListener("click", function () {
+              apiPayment1.addEventListener("click", function () {
+                apiPayment2.addEventListener("click", function () {
+                  apiPayment3.addEventListener("click", function () {
+                    apiPayment4.addEventListener("click", function () {
+                      apiPayment5.addEventListener("click", function () {
+                        apiPayment6.addEventListener("click", function () {});
+                      });
+                    });
+                  });
+                });
+              });
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
