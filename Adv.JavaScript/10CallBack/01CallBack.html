@@ -12,26 +12,56 @@
       A JavaScript callback is a function which is to be executed after another
       function has finished execution
     </p>
+    <p>
+      Callbacks allow you to continue executing code while the operation is
+      being executed in the background
+    </p>
 
     <script>
-        // Synchronous Programming 
+      // Synchronous Programming
 
-        console.log('10');
-        console.log('20');
-        console.log('30');
+      // console.log('10');
+      // console.log('20');
+      // console.log('30');
 
+      //  // ASynchronous Programming
 
-         // ASynchronous Programming 
+      //  console.log('before');
+      //  setTimeout(() => {
+      //     console.log(`hey I'm CallBack`);
+      //  }, 2000);
+      //  console.log('after');
 
+      // function greet(yes, no, hello) {
+      //   console.log("hey");
+      // }
+      // function yes() {
+      //   console.log("yes");
+      // }
+      // function no() {
+      //   console.log("No");
+      // }
+      // function hello() {
+      //   console.log("hello");
+      // }
+      // greet(yes(), no(), hello());
 
-         console.log('before');
-         setTimeout(() => {
-            console.log(`hey I'm CallBack`);
-         }, 2000);
-         console.log('after');
+      function ask(question, yes, no) {
+        if (confirm(question)) {
+          yes();
+        } else {
+          no();
+        }
+      }
 
+      function showOk() {
+        alert("Yes Boii You are right");
+      }
+      function showCancle() {
+        alert("Hey, Boii You are Wrong");
+      }
 
-
+      ask(`Virat's wife is Anushka`, showOk, showCancle);
     </script>
   </body>
 </html>

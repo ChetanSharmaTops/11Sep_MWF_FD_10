@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SetTimeOut With Closure</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>SetTimeOut With Closure</h1>
 
     <script>
-       
+      function outer() {
+        // console.log("Namaste Bharat");
+        for (let i = 0; i <= 5; i++) {
+          setTimeout(() => {
+            console.log(i);
+          }, i * 2000);
+        }
+      }
+      outer();
     </script>
-</body>
+  </body>
 </html>

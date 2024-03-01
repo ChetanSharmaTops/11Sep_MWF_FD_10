@@ -9,7 +9,13 @@
     <h1>CallBack Hell</h1>
     <p>The nested callback makes a pyramid of Doom </p>
 
+
     <script>
+      // Callback hell => one callback inside another and another and another ......this is what callback hell is
+
+
+
+
       apiProduct.addEventListener("click", function () {
         apiCart.addEventListener("click", function () {
           apiPlaceOrder.addEventListener("click", function () {
@@ -29,6 +35,13 @@
           });
         });
       });
+
+
+
+      
+    //   this type of code is unreadable and unmaintainable
+
+    // this type of structure of code is calles as Pyramid of Doom 
     </script>
   </body>
 </html>
